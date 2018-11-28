@@ -15,7 +15,7 @@ public:
     void hi (account_name user) {
         require_auth( user ); // ensures the authorizing user must be the same as
                                 // the user we are saying "hi" to
-        print ("Hello, ", name{user} );
+        print ("Hi, ", name{user} );
     }
 };
 EOSIO_ABI( hello, (hi))
